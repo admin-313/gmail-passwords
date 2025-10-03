@@ -1,8 +1,9 @@
 services:
 
-  db:
+  postgres:
     image: "postgres:18-trixie"
     user: "543000:543000"
+    container_name: "postgres-passwords"
     restart: "on-failure"
     ports:
       - "5432:5432"
